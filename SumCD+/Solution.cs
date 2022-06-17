@@ -19,10 +19,10 @@ namespace SumCD_
                         vs.Remove(vs.Last());
                         break;
                     case "D":
-                        vs.Add(2 * vs.Last()); // Put 2*last number
+                        vs.Add(2 * vs.Last()); // Put 2 * last number
                         break;
                     case "+":
-                        vs.Add(vs.Last() + vs.Skip(vs.Count() - 2).First());    // Put last number + penultimate number
+                        vs.Add(vs.Last() + vs[vs.Count - 2]);   // Put last number + penultimate number
                         break;
                     default:
                         vs.Add(int.Parse(ops[i]));  // Put the number 

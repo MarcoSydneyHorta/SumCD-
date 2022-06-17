@@ -14,10 +14,10 @@ namespace SumCD_
             Console.Write("Digite os dados separados por espaço: ");
             entrada = Console.ReadLine();
             dados = entrada.Split(" ");
+
             int total = 0;
             Solution.CalPoints(dados, ref vs);
 
-            int nList = vs.Count;
             Console.Write("The total sum is = ");
             for (int i = 0; i < vs.Count; i++)
             {
